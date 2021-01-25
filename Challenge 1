@@ -1,0 +1,27 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class challenge1 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader reader =new BufferedReader(new InputStreamReader(System.in));
+		
+		
+		System.out.println("Enter the number of test cases");
+		int testCase = Integer.parseInt(reader.readLine());
+		
+		int sum[] = new int[testCase];
+		
+		for(int i=0 ; i<testCase; i++) {
+		System.out.println("Enter 2 numbers between 1 and 100 : ");
+        int num1 = Integer.parseInt(reader.readLine());
+    	int num2 = Integer.parseInt(reader.readLine());
+		sum[i] = num1 + num2;}
+		for(int i=0 ; i<testCase; i++) {
+        System.out.println("The sum is : "+sum[i]);}
+        
+	}
+
+}
+
+// Vibha R Siddheshwar AI-ML B section
